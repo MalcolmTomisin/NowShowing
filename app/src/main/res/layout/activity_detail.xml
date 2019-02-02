@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+
+    <ImageView
+        android:id="@+id/imageDetail"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title: "
+            android:drawableStart="@drawable/ic_baseline_theaters_24px"
+            android:labelFor="@+id/text_title"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="GLASS"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating: "
+            android:drawableStart="@drawable/ic_baseline_grade_24px"
+            android:labelFor="@+id/textRating"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8.5"
+            android:textSize="20sp"
+            android:id="@+id/textRating"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adult: "
+            android:drawableStart="@drawable/ic_baseline_info_24px"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:labelFor="@+id/text_adult"
+            android:textStyle="normal"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_adult"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Hello"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:labelFor="@+id/text_overview"
+                android:text="Overview: "
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/text_overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet, mauris in rutrum vulputate,
+            elit eros cursus urna, eleifend luctus metus elit a libero. Morbi eget quam et leo suscipit faucibus sit amet ac massa.
+            Integer consequat nisl ligula, ut aliquet est lobortis eget. Aliquam ultrices augue sit amet tortor scelerisque viverra.
+            Fusce vulputate risus vel ante sagittis, eget dignissim ex semper. Nunc euismod commodo dolor, ac luctus urna ultricies eu.
+            Vestibulum convallis eleifend venenatis. Aliquam efficitur a quam pharetra mattis. Donec id quam ac ligula volutpat lacinia.
+            Mauris tincidunt varius nibh, ut rutrum est accumsan vel. Proin congue, neque vitae ornare ornare, dolor purus rhoncus erat, nec elementum nulla turpis et neque."
+                android:textSize="20sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Release Date: "
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:labelFor="@+id/text_date"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_date"
+            android:textStyle="bold"
+            android:text="Date"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>
